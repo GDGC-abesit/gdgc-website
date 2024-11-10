@@ -22,7 +22,16 @@ const LandingPageNavbar = () => {
         <span className="cursor-pointer hover:border-2 rounded-full py-1 px-2 transition-all border-[--primary-red] hover:text-[--primary-red]">Contributors</span>
       </div>
       <div>
-        <Button>Join Now</Button>
+        <button
+          className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-[--primary-blue] to-[--primary-green] group-hover:from-[--primary-orange] group-hover:to-[--primary-red] hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-[--primary-orange] dark:focus:ring-[--primary-red]"
+        >
+          <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0">
+            Join <span className="font-bold text-[--primary-blue]">G</span>
+            <span className="font-bold text-[--primary-green]">D</span>
+            <span className="font-bold text-[--primary-orange]">G</span>
+            <span className="font-bold text-[--primary-red]">C</span> Now
+          </span>
+        </button>
       </div>
     </div>
   );
