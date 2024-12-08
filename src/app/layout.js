@@ -1,4 +1,7 @@
+import React from "react";
+import LandingPageNavbar from "@/components/navbar/landing-page";
 import "./globals.css";
+import Footer from "@/components/sections/footer";
 
 export const metadata = {
   title: "GDGC ABESIT - Google Developers Group in College",
@@ -9,7 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <LandingPageNavbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
