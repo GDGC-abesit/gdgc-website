@@ -5,44 +5,61 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "Being part of GDG ABESIT was so fun! I learned so much and met awesome people.",
+    name: "Nikita Singh",
+    title: "Core Team Member",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
-  },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+      "I got to build cool websites and work on real projects. Best experience ever!",
+    name: "Vishnu Goswami",
+    title: "Web Developer",
   },
   {
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+      "I loved being part of GDG ABESIT. I worked on projects and made great friends.",
+    name: "Prince Sharma",
+    title: "Web Development",
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+      "I always wanted to learn about cybersecurity. GDG ABESIT made it possible!",
+    name: "Utkarsh Aggarwal",
+    title: "CyberSecurity",
+  },
+  {
+    quote:
+      "GDG ABESIT is like a second family. Everyone helps each other grow.",
+    name: "Smrita Shukla",
+    title: "Designer",
+  },
+
+  {
+    quote:
+      "Working on projects with GDG ABESIT was so much fun. I learned a lot!",
+    name: "Karan Kapoor",
+    title: "Open Source Contributor",
+  },
+  {
+    quote:
+      "GDG ABESIT made my college life awesome. I had fun while learning new things.",
+    name: "Shweta Nair",
+    title: "UI/UX Designer",
   },
 ];
 
 const Thoughts = () => {
   return (
     <div className="py-12">
-            <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <h1 className="max-w-lg mb-6 font-sans text-4xl text-center md:text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl md:mx-auto">
-          Our <span className="text-yellow-400 tracking-wider">WHAT PEOPLE THINK</span>
+          Our{" "}
+          <span className="text-yellow-400 tracking-wider">
+            WHAT PEOPLE THINK
+          </span>
         </h1>
         <p className="text-base dark:text-gray-300 text-gray-700 md:text-lg text-center">
-         Testimonials from the people who worked with us
+          Testimonials from the people who worked with us
         </p>
       </div>
 

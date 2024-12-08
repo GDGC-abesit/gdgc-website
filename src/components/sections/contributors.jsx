@@ -44,6 +44,8 @@ const [LoadMoreValue, setLoadMoreValue] = useState(8);
                     <div key={member.id}>
                       <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                         <Image
+                        width={200}
+                        height={200}
                           className="object-cover w-full sm:h-80"
                           src={member.img}
                           alt={member.name}

@@ -131,6 +131,8 @@ const Page = () => {
                           <div key={index}>
                             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-xl">
                               <Image
+                                height={200}
+                                width={200}
                                 className="object-cover w-full sm:h-80 "
                                 src={member.image}
                                 alt={member.name}
