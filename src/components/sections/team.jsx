@@ -296,7 +296,7 @@ const cards = [
             >
               <FaLinkedin size={20} />
             </Link>
-            <Link target="_blank" href={"https://github.com/Chiragramesh25"}>
+            <Link target="_blank" href={"https://github.com/WebVishnu"}>
               <FaGithub size={20} />
             </Link>
           </div>

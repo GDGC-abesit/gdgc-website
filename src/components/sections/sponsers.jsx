@@ -11,7 +11,7 @@ const Sponsers = () => {
           People who have helped us throughout our journey constantly.
         </p>
       </div>
-      <div className="grid md:grid-cols-3 gap-5 mt-5">
+      <div className="grid md:grid-cols-2 gap-5 mt-5">
         <div>
           <Image
             alt="image"

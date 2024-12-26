@@ -112,13 +112,6 @@ const Hero = () => {
                   "https://live.staticflickr.com/65535/54036432067_84faf80a02_z.jpg",
               },
               {
-                id: 6,
-                name: "Aditya Srivastava",
-                designation: "Web 3 / Cloud",
-                image:
-                  "https://live.staticflickr.com/65535/54037409991_b9e6a75cfc_z.jpg",
-              },
-              {
                 id: 7,
                 name: "Smrita Shukla",
                 designation: "Design",
