@@ -351,29 +351,6 @@ const cards = [
     },
   },
   {
-    title: "Aditya Srivastava",
-    description: "Web 3 / Cloud",
-    src: "https://live.staticflickr.com/65535/54037409991_b9e6a75cfc_z.jpg",
-    content: () => {
-      return (
-        <>
-          <p>Web 3 / Cloud</p>
-          <div className="flex gap-3">
-            <Link
-              target="_blank"
-              href={"https://www.linkedin.com/in/aditya-srivastava-bb5008251"}
-            >
-              <FaLinkedin size={20} />
-            </Link>
-            <Link target="_blank" href={"https://github.com/IronicDeGawd"}>
-              <FaGithub size={20} />
-            </Link>
-          </div>
-        </>
-      );
-    },
-  },
-  {
     title: "Smrita Shukla",
     description: "Design",
     src: "https://live.staticflickr.com/65535/54041766082_770e8577a5_z.jpg",
