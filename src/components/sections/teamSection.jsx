@@ -38,7 +38,7 @@ const teamData = [
     img: "https://live.staticflickr.com/65535/54037306066_16ba1b8cd7_z.jpg",
     title: "Web Development",
     linkedin: "https://www.linkedin.com/in/vishnu-goswami",
-    github: "https://github.com/Chiragramesh25",
+    github: "https://github.com/WebVishnu",
   },
   {
     id: 4,
@@ -55,14 +55,6 @@ const teamData = [
     title: "CyberSecurity",
     linkedin: "https://www.linkedin.com/in/utkarshcse26",
     github: "https://github.com/utkarshcse2026",
-  },
-  {
-    id: 6,
-    name: "Aditya Srivastava",
-    img: "https://live.staticflickr.com/65535/54037409991_b9e6a75cfc_z.jpg",
-    title: "Web 3 / Cloud",
-    linkedin: "https://www.linkedin.com/in/aditya-srivastava-bb5008251",
-    github: "https://github.com/IronicDeGawd",
   },
   {
     id: 7,
