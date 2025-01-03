@@ -19,12 +19,23 @@ module.exports = {
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        motion: "motion 2s ease-in-out infinite",
+        roadAnimation: "roadAnimation 5s linear infinite",
       },
       keyframes: {
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
           },
+        },
+        motion: {
+          "0%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(3px)" },
+          "100%": { transform: "translateY(0px)" },
+        },
+        roadAnimation: {
+          "0%": { transform: "translateX(0px)" },
+          "100%": { transform: "translateX(-350px)" },
         },
       },
       colors: {

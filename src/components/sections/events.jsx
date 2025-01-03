@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import FollowerPointerCard from "../ui/following-pointer";
 import Link from "next/link";
+import { VscFeedback } from "react-icons/vsc";
+import { events } from "@/lib/events";
 
 const Events = () => {
   return (
@@ -16,33 +18,20 @@ const Events = () => {
       </div>
 
       <div className="grid md:grid-cols-3 gap-5 mt-12">
-        <Card
-          blogContent={{
-            author: "Nikita Singh",
-            readMoreUrl:
-              "https://gdg.community.dev/events/details/google-gdg-on-campus-abes-institute-of-technology-ghaziabad-india-presents-tech-winter-break-gdg-on-campus-abesit/",
-            date: "Dec 6, 2024",
-            title: "Tech Winter Break- 1 week android development session",
-            description:
-              "Tech Winter Break is a month-long innovation camp in December 2024, empowering participants to build impactful projects aligned with the UN Sustainable Development Goals (SDGs) for the Solution Challenge 2025. Featuring expert-led sessions and mentorship, it’s the perfect environment to learn, create, and innovate.",
-            authorAvatar:
-              "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/avatars/nikita_kumari_TA5uM7x.jpg",
-          }}
-        />
-        <Card
-          blogContent={{
-            author: "Nikita Singh",
-            readMoreUrl:
-              "https://gdg.community.dev/events/details/google-gdg-on-campus-abes-institute-of-technology-ghaziabad-india-presents-gen-ai-information-session/cohost-gdg-on-campus-abes-institute-of-technology-ghaziabad-india",
-            date: "Oct 6, 2024",
-            title: "Gen AI Information Session",
-            description:
-              "Information session for the Google Developer Groups On Campus (GDGC) at ABESIT. GDGC is a student-led tech community focused on building real-world projects, gaining practical skills, networking with peers, and getting recognized. The session will be held on 6th October 2024 (Sunday) at 7 PM and will be conducted online. The agenda covers a guide for the Gen AI Study Jam.",
-
-            authorAvatar:
-              "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/avatars/nikita_kumari_TA5uM7x.jpg",
-          }}
-        />
+        {events.map((blogContent) => (
+          <Card
+            key={blogContent.id}
+            blogContent={{
+              id: blogContent.id,
+              author: blogContent.author,
+              readMoreUrl: blogContent.readMoreUrl,
+              date: blogContent.date,
+              title: blogContent.title,
+              description: blogContent.description,
+              authorAvatar: blogContent.authorAvatar,
+            }}
+          />
+        ))}
       </div>
     </div>
   );
@@ -78,13 +67,18 @@ function Card({ blogContent }) {
             </h2>
             <div className="flex flex-row justify-between items-center mt-10">
               <span className="text-sm text-gray-500">{blogContent.date}</span>
-              <Link
-                target="_blank"
-                href={blogContent.readMoreUrl}
-                className="relative z-10 px-6 py-2 cursor-pointer bg-black text-white font-bold rounded-xl block text-xs"
-              >
-                Read More
-              </Link>
+              <div className="flex space-x-2 items-center">
+                <Link className="cursor-pointer" href={`/feedback/${blogContent.title}`}>
+                  <VscFeedback />
+                </Link>
+                <Link
+                  target="_blank"
+                  href={blogContent.readMoreUrl}
+                  className="relative z-10 px-3 py-2 cursor-pointer bg-black text-white font-bold rounded-xl block text-xs"
+                >
+                  Read More
+                </Link>
+              </div>
             </div>
           </div>
         </div>

@@ -86,7 +86,7 @@ function Team() {
                   priority
                   width={300}
                   height={300}
-                  src={active.src || ""}
+                  src={active.src || null}
                   className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover  object-center"
                 />
               </motion.div>

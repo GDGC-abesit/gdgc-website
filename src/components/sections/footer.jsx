@@ -27,7 +27,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="h-[20rem] flex flex-col justify-center  items-center px-4">
+    <div className="h-[20rem] flex flex-col justify-center  items-center px-4 footer">
       <h2 className=" sm:mb-7 mb-5 text-2xl text-center sm:text-5xl dark:text-white text-black">
         Do you want to ask anything?
       </h2>

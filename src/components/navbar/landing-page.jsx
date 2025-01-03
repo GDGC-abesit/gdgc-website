@@ -2,12 +2,17 @@
 import Image from "next/image";
 import { ColorizeText } from "@/lib/utils";
 import Link from "next/link";
-import {  MenuIcon } from "lucide-react";
+import { MenuIcon } from "lucide-react";
 import { useState } from "react";
+import { Button } from "../ui/button";
 const LandingPageNavbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={`flex flex-col justify-between items-center pe-1 ps-6 py-2 bg-opacity-20 backdrop-blur-md ${!open?"rounded-full":"rounded-xl"} border border-black/20 fixed top-4 z-50 w-[calc(100vw-3em)] left-4 `}>
+    <div
+      className={`flex flex-col justify-between items-center pe-1 ps-6 py-2 bg-opacity-20 backdrop-blur-md ${
+        !open ? "rounded-full" : "rounded-xl"
+      } border border-black/20 fixed top-4 z-50 w-[calc(100vw-3em)] left-4 `}
+    >
       <div className="flex justify-between items-center w-full">
         <Link href={"/"}>
           <Image
@@ -43,6 +48,12 @@ const LandingPageNavbar = () => {
             className="cursor-pointer hover:border-2 rounded-full py-1 px-2 transition-all border-[--primary-red] hover:text-[--primary-red]"
           >
             Contributors
+          </Link>
+          <Link
+            href={"/feedback/0"}
+            className="cursor-pointer hover:border-2 rounded-full py-1 px-2 transition-all border-[--primary-red] hover:text-[--primary-red]"
+          >
+            Feedback
           </Link>
         </div>
         <div>
@@ -89,6 +100,12 @@ const LandingPageNavbar = () => {
             className="cursor-pointer w-full hover:border-2 rounded-full py-1 px-2 transition-all border-[--primary-red] hover:text-[--primary-red]"
           >
             Contributors
+          </Link>
+          <Link
+            href={"/feedback/0"}
+            className="cursor-pointer hover:border-2 rounded-full py-1 px-2 transition-all border-[--primary-red] hover:text-[--primary-red]"
+          >
+            Feedback
           </Link>
         </div>
       )}
