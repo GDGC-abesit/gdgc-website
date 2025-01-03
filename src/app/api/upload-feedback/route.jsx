@@ -28,7 +28,7 @@ export async function POST(req) {
     const spreadsheetId = "1V5aBAq_q4BY5tnFrqVs9uo3fqd9vjwrUkQS6oRcVDnI";
     const range = "Sheet1!A2";
 
-    const values = [[name, email, college, rating, feedback, eventName, type]];
+    const values = [[feedback, name, email, college, rating, eventName, type]];
 
     // Append data to the Google Sheet
     await sheets.spreadsheets.values.append({
