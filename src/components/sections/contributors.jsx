@@ -58,9 +58,9 @@ const [LoadMoreValue, setLoadMoreValue] = useState(8);
                           <p className="mb-4 text-xs text-gray-100">
                             {member.role}
                           </p>
-                          <p className="mb-4 text-xs tracking-wide text-gray-400">
+                          {/* <p className="mb-4 text-xs tracking-wide text-gray-400">
                             {member.desc}
-                          </p>
+                          </p> */}
 
                           <div className="flex items-center justify-center space-x-3">
                             <SocialIcon

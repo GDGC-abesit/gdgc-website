@@ -70,7 +70,7 @@ const LandingPageNavbar = () => {
           </button>
           <button className="md:relative md:inline-flex hidden absolute  items-center justify-center p-0.5 me-2 overflow-hidden text-sm font-medium text-black rounded-full group bg-gradient-to-br from-[--primary-blue] to-[--primary-green] group-hover:from-[--primary-orange] group-hover:to-[--primary-red] hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-[--primary-orange] dark:focus:ring-[--primary-red]">
             <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0">
-              Join {ColorizeText("GDGC")} Now
+              <Link href={"https://gdg.community.dev/gdg-on-campus-abes-institute-of-technology-ghaziabad-india/"}> Join {ColorizeText("GDGC")} Now </Link>
             </span>
           </button>
         </div>
