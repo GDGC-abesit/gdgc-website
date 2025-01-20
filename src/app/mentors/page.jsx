@@ -10,7 +10,7 @@ export const mentorData = [
       "https://res.cloudinary.com/dkgwk8ey5/image/upload/v1699609759/Screenshot_2023-11-10_at_3.18.31_PM_vmagbm.png",
     linkedin: "https://www.linkedin.com/in/iamdevraj/",
     instagram: "https://www.instagram.com/devraj_rathi/",
-    occuparion: "Founder of GDSC_ABESIT <br/> SDE-2 @Oracle",
+    occuparion: "Founder of GDSC_ABESIT SDE-2 @Oracle",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const mentorData = [
       "https://res.cloudinary.com/dkgwk8ey5/image/upload/v1699631814/Screenshot_2023-11-10_at_9.25.23_PM_qiaiay.png",
     linkedin: "https://www.linkedin.com/in/ertarunagarwal/",
     instagram: "https://www.instagram.com/tarun_agarwal._/",
-    occuparion: "Core Member @GDSC_ABESIT'20 <br/> SDE-2 @GoComet",
+    occuparion: "Core Member @GDSC_ABESIT'20 SDE-2 @GoComet",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ export const mentorData = [
       "https://res.cloudinary.com/dkgwk8ey5/image/upload/v1699611004/Screenshot_2023-11-10_at_3.39.39_PM_kudmko.png",
     linkedin: "https://www.linkedin.com/in/ksatyarth2/",
     instagram: "https://www.instagram.com/ksatyarth2/",
-    occuparion: "Google DSC Lead '20 <br/> Smart Contract Developer @Timeswap",
+    occuparion: "Google DSC Lead '20 Smart Contract Developer @Timeswap",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const mentorData = [
       "https://res.cloudinary.com/dkgwk8ey5/image/upload/v1699611866/Screenshot_2023-11-10_at_3.53.50_PM_yzrngx.png",
     linkedin: "https://www.linkedin.com/in/hari-om-kushwaha-6a698a192/",
     instagram: "https://www.instagram.com/hariomk_/",
-    occuparion: "Core Member @GDSC_ABESIT'20 <br/> SDE @Betterplace",
+    occuparion: "Core Member @GDSC_ABESIT'20 SDE @Betterplace",
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ export const mentorData = [
       "https://res.cloudinary.com/dkgwk8ey5/image/upload/v1699611626/adya_zory4i.jpg",
     linkedin: "https://linkedin.com/in/adya-pandey-593393170/",
     instagram: "https://www.instagram.com/_adya_pandey_/",
-    occuparion: "Google DSC Lead '21 <br/> Civil Service",
+    occuparion: "Google DSC Lead '21 Civil Service",
   },
   {
     id: 6,
@@ -55,7 +55,7 @@ export const mentorData = [
       "https://res.cloudinary.com/dkgwk8ey5/image/upload/v1699611430/pari_qouven.jpg",
     linkedin: "https://www.linkedin.com/in/tomarpari90/",
     instagram: "https://www.instagram.com/_tomarr/",
-    occuparion: "Core Member @GDSC_ABESIT'21 <br/> Junior Blockchain Developer @Nest",
+    occuparion: "Core Member @GDSC_ABESIT'21 Junior Blockchain Developer @Nest",
   },
   {
     id: 7,
@@ -82,7 +82,7 @@ export const mentorData = [
       "https://res.cloudinary.com/dkgwk8ey5/image/upload/v1700484382/SAVE_20231116_092421_v91hfs.jpg",
     linkedin: "https://www.linkedin.com/in/shivam-kumar-1ab28a212/",
     instagram: "https://www.instagram.com/connect_shivam_here/",
-    occuparion: "Google DSC Lead '22 <br/> Community Manager @Outdefine",
+    occuparion: "Google DSC Lead '22 Community Manager @Outdefine",
   },
   {
     id: 10,
@@ -90,7 +90,7 @@ export const mentorData = [
     image: "https://live.staticflickr.com/65535/54042770988_f4bf27949b_z.jpg",
     linkedin: "https://www.linkedin.com/in/keshavmalik/",
     instagram: "https://www.instagram.com/_keshav_malik/",
-    occuparion: "Google DSC Lead '23 <br/> Full Stack Developer @Endeavor",
+    occuparion: "Google DSC Lead '23 Full Stack Developer @Endeavor",
   }
 ];
 
