@@ -9,6 +9,7 @@ const Events = () => {
   return (
     <div className="py-12">
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+
         <h1 className="max-w-lg mb-6 font-sans text-4xl text-center md:text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl md:mx-auto">
           Our <span className="text-yellow-400 tracking-wider">EVENTS</span>
         </h1>
@@ -24,6 +25,7 @@ const Events = () => {
             blogContent={{
               id: blogContent.id,
               author: blogContent.author,
+              image: blogContent.image,
               readMoreUrl: blogContent.readMoreUrl,
               date: blogContent.date,
               title: blogContent.title,
@@ -53,9 +55,9 @@ function Card({ blogContent }) {
             <Image
               alt="image"
               src={blogContent.image}
-              layout="fill"
-              objectFit="cover"
-              className={`group-hover:scale-95 group-hover:rounded-2xl transform object-cover transition duration-200 `}
+              height={400}
+              width={400}
+              className={`group-hover:scale-95 w-full h-full group-hover:rounded-2xl transform object-cover transition duration-200 `}
             />
           </div>
           <div className=" p-4">
@@ -65,18 +67,18 @@ function Card({ blogContent }) {
             <h2 className="font-normal my-4 text-sm text-zinc-500">
               {blogContent.description}
             </h2>
-            <div className="flex flex-row justify-between items-center mt-10">
+              <Link
+                target="_blank"
+                href={blogContent.readMoreUrl}
+                className="relative text-center px-3 py-3 cursor-pointer bg-black text-white font-bold rounded-lg block text-xs"
+              >
+                Read More
+              </Link>
+            <div className="flex flex-row justify-between items-center mt-2">
               <span className="text-sm text-gray-500">{blogContent.date}</span>
               <div className="flex space-x-2 items-center">
                 <Link className="cursor-pointer" href={`/feedback/${blogContent.title}`}>
                   <VscFeedback />
-                </Link>
-                <Link
-                  target="_blank"
-                  href={blogContent.readMoreUrl}
-                  className="relative z-10 px-3 py-2 cursor-pointer bg-black text-white font-bold rounded-xl block text-xs"
-                >
-                  Read More
                 </Link>
               </div>
             </div>
