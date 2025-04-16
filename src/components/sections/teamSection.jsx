@@ -121,6 +121,14 @@ const teamData = [
     linkedin: "https://www.linkedin.com/in/samyak-vansh-11aa83250/",
     github: "https://github.com/iamSamyakVansh",
   },
+  {
+    id: 16,
+    name: "",
+    img: "https://i.pinimg.com/736x/2b/be/ea/2bbeead9464373ca9475bef908c0448e.jpg",
+    title: "",
+    linkedin: "https://drive.google.com/drive/folders/1sRF4HCrzkuxz3XZkJbKMhCaHY0FH1-9k?usp=sharing",
+    github: "https://drive.google.com/drive/folders/1sRF4HCrzkuxz3XZkJbKMhCaHY0FH1-9k?usp=sharing",
+  },
 ];
 
 const TeamSection = () => {

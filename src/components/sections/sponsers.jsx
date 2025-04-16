@@ -13,26 +13,30 @@ const Sponsers = () => {
       </div>
       <div className="grid md:grid-cols-2 gap-5 mt-5">
         <div>
-          <Image
-            alt="image"
-            src={
-              "https://gdsc-abesit.vercel.app/_next/image?url=https%3A%2F%2Fmms.businesswire.com%2Fmedia%2F20210414005467%2Fen%2F871272%2F23%2Fhorz-full-color.jpg&w=640&q=75"
-            }
-            height={300}
-            width={500}
-            className="h-full w-full"
-          />
+            <a href="https://interledger.org/">
+              <Image
+              alt="image"
+              src={
+                "https://gdsc-abesit.vercel.app/_next/image?url=https%3A%2F%2Fmms.businesswire.com%2Fmedia%2F20210414005467%2Fen%2F871272%2F23%2Fhorz-full-color.jpg&w=640&q=75"
+              }
+              height={300}
+              width={500}
+              className="h-full w-full"
+            />
+            </a>
         </div>
         <div>
-          <Image
-            alt="image"
-            src={
-              "https://gdsc-abesit.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdkgwk8ey5%2Fimage%2Fupload%2Fv1699637800%2FNS_dvg3st.png&w=640&q=75"
-            }
-            height={300}
-            width={500}
-            className="h-full w-full"
-          />
+            <a href="https://www.newtonschool.co/">
+                <Image
+                alt="image"
+                src={
+                  "https://gdsc-abesit.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdkgwk8ey5%2Fimage%2Fupload%2Fv1699637800%2FNS_dvg3st.png&w=640&q=75"
+                }
+                height={300}
+                width={500}
+                className="h-full w-full"
+              />
+            </a>
         </div>
       </div>
     </div>
