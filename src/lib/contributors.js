@@ -53,15 +53,6 @@ export const  ContributorData = [
       social2: "https://github.com/smitatripathi417",
       desc: "",
     },
-    {
-        id: 1,
-        name: "Chirag Ramesh Chandra",
-        img: "https://media.licdn.com/dms/image/v2/D4D03AQF3Rrlg-Uls1w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1692046814475?e=1739404800&v=beta&t=xb3q_r55xYCShh1dw5CembcBdgFcL4ISCEyAxONUPdQ",
-        role: "App Developer",
-        social1: "https://x.com/chiragchandra25",
-        social2: "https://github.com/Chiragramesh25",
-        desc: "Funniest guy in the room (that's what he said)",
-      },
       {
         id: 2,
         name: "Ishaan",
@@ -99,15 +90,6 @@ export const  ContributorData = [
         desc: "Aspiring Jim Halpert",
       },
       {
-        id: 2102900100069,
-        name: "Khushi Sharma",
-        img: "https://media.licdn.com/dms/image/v2/D5603AQFJE9xoL2I1HQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725203904429?e=1739404800&v=beta&t=FWQbc2RHYLfixWx-0OnBG-k0OuDtcOUTJG8seyymtA0",
-        role: "Web Developer",
-        social1: "https://x.com/ikhushisharmaa",
-        social2: "https://www.linkedin.com/in/khushisharma4/",
-        desc: "Always laughing at lame jokes, hehe.",
-      },
-      {
         id: 2002900100107,
         name: "Prakhar Sharma",
         img: "https://zippy-starburst-d78231.netlify.app/assets/heroImage-C3swbDr5.jpg",
@@ -124,15 +106,6 @@ export const  ContributorData = [
         social1: "https://x.com/keshwani2002",
         social2: "https://www.linkedin.com/in/manish-kumar-keshwani-052b61243/",
         desc: "Once a nerd, always a nerd.",
-      },
-      {
-        id: 197,
-        name: "Yash Kaushik",
-        img: "https://media.licdn.com/dms/image/v2/D5603AQEX0XYOjxRHsQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715456937881?e=1739404800&v=beta&t=axrFMuUSlAF4s5chtmR3QhezYH6Bhy8lq-CGrOxs1qg",
-        role: "Contributor",
-        social1: "https://www.linkedin.com/in/yash-kaushik-45b200258",
-        social2: "",
-        desc: "Testing Website",
       },
       {
         id: 197,
@@ -216,15 +189,6 @@ export const  ContributorData = [
         social1: "https://www.linkedin.com/in/pulkit-gahlot-399187251/",
         social2: "https://x.com/Pulkit_1527",
         desc: "Maybe/Maybe not :p",
-      },
-      {
-        id: 2202901520184,
-        name: "vansh giri",
-        img: "https://media.licdn.com/dms/image/v2/D4D03AQEGXBdk34D2Ag/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725182897106?e=1739404800&v=beta&t=rbciTnVKqWqeeiwv1J5XkgVEuUUT5d0HWiEnaOlM49Y",
-        role: "App Development Contributor",
-        social1: "https://www.linkedin.com/in/vansh-giri-b8565b295/",
-        social2: "https://github.com/",
-        desc: "coding",
       },
       {
         id: 2102901550042,
