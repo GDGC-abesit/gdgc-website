@@ -9,7 +9,6 @@ const Events = () => {
   return (
     <div className="py-12">
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-
         <h1 className="max-w-lg mb-6 font-sans text-4xl text-center md:text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl md:mx-auto">
           Our <span className="text-yellow-400 tracking-wider">EVENTS</span>
         </h1>
@@ -41,7 +40,7 @@ const Events = () => {
 
 function Card({ blogContent }) {
   return (
-    <div className="w-full mx-auto">
+    <div className="w-full h-full mx-auto">
       <FollowerPointerCard
         title={
           <TitleComponent
@@ -50,23 +49,26 @@ function Card({ blogContent }) {
           />
         }
       >
-        <div className="relative overflow-hidden h-full rounded-2xl transition duration-200 group bg-white hover:shadow-xl border border-gray-200">
-          <div className="w-full aspect-w-16 aspect-h-10 bg-gray-100 rounded-tr-lg rounded-tl-lg overflow-hidden xl:aspect-w-16 xl:aspect-h-10 relative">
+        <div className="relative overflow-hidden h-[600px] flex flex-col rounded-2xl transition duration-200 group bg-white hover:shadow-xl border border-gray-200">
+          <div className="w-full h-48 bg-gray-100 rounded-tr-lg rounded-tl-lg overflow-hidden relative">
             <Image
-              alt="image"
+              alt={blogContent.title}
               src={blogContent.image}
-              height={400}
-              width={400}
-              className={`group-hover:scale-95 w-full h-full group-hover:rounded-2xl transform object-cover transition duration-200 `}
+              fill
+              className="group-hover:scale-95 object-cover transform transition duration-200"
+              style={{ objectFit: "cover" }}
             />
           </div>
-          <div className=" p-4">
-            <h2 className="font-bold my-4 text-lg text-zinc-700">
+          <div className="p-4 flex flex-col h-[calc(600px-12rem)]">
+            <h2 className="font-bold mb-4 text-lg text-zinc-700 line-clamp-2">
               {blogContent.title}
             </h2>
-            <h2 className="font-normal my-4 text-sm text-zinc-500">
-              {blogContent.description}
-            </h2>
+            <div className="flex-grow overflow-hidden">
+              <h2 className="font-normal text-sm text-zinc-500 line-clamp-6">
+                {blogContent.description}
+              </h2>
+            </div>
+            <div className="mt-6">
               <Link
                 target="_blank"
                 href={blogContent.readMoreUrl}
@@ -74,12 +76,13 @@ function Card({ blogContent }) {
               >
                 Read More
               </Link>
-            <div className="flex flex-row justify-between items-center mt-2">
-              <span className="text-sm text-gray-500">{blogContent.date}</span>
-              <div className="flex space-x-2 items-center">
-                <Link className="cursor-pointer" href={`/feedback/${blogContent.title}`}>
-                  <VscFeedback />
-                </Link>
+              <div className="flex flex-row justify-between items-center mt-2">
+                <span className="text-sm text-gray-500">{blogContent.date}</span>
+                <div className="flex space-x-2 items-center">
+                  <Link className="cursor-pointer" href={`/feedback/${blogContent.title}`}>
+                    <VscFeedback />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -91,7 +94,7 @@ function Card({ blogContent }) {
 
 const TitleComponent = ({ title, avatar }) => (
   <div className="flex space-x-2 items-center">
-    {/* <Image alt="image"
+    {/* <Image 
       src={avatar}
       height="20"
       width="20"

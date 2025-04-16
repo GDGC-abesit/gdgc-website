@@ -19,7 +19,7 @@ const testimonials = [
     quote:
       "I loved being part of GDG ABESIT. I worked on projects and made great friends.",
     name: "Prince Sharma",
-    title: "Web Development",
+    title: "Web Developer",
   },
   {
     quote:
