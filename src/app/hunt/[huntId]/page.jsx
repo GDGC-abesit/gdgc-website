@@ -22,7 +22,6 @@ const Page = () => {
     const navbarHeight = 120; // Corrected to match pt-20 (5rem = 80px)
     const huntID = String(process.env.NEXT_PUBLIC_HUNT_ID);
     const params = useParams()
-    console.log(huntID)
     const [positions, setPositions] = useState([]);
 
     useEffect(() => {
