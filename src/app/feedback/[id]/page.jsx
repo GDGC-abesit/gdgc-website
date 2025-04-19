@@ -95,7 +95,7 @@ const FeedbackPage = ({ params }) => {
         setError("There was an error saving the data. Please try again later.");
       }
     } catch (error) {
-      console.log("Error submitting feedback:", error);
+      console.error("Error submitting feedback:", error);
       setError("There was an error saving the data. Please try again later.");
     } finally {
       setIsSubmitting(false);
