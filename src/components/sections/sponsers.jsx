@@ -39,6 +39,19 @@ const Sponsers = () => {
             </a>
         </div>
       </div>
+      <div className="flex justify-center items-center mx-auto">
+            <a href="https://www.aviationoverseassupply.us/">
+                <Image
+                alt="image"
+                src={
+                  "https://media-hosting.imagekit.io/4f955eeeaff74f78/aosl.jpg?Expires=1840117639&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=H4fIwe-1UoXi1T59F7rUzkVWuA50ucRZhFcTdkcoR1RnrzbGRRCgDaDy32Wgxe8xqDf9aC5e4~4frzSbzsfxY4EMWXR-jEjL18D2dXU8w7ailKIsWi0OGfmZ1CvpbSJZjScEbKESbPVc9X--dNkmpLUU7BYhjUAGPnFF27lUd9TDRzdBNPybAZNh8gIBBlymIEi6l~gfNz5ITWfLh2a9l5w8BglyukdrwjjbqVmLQ4RJ7Qv~SzP5CHxVYlfBWDmy3Cu85YwViG8DU4IQKEZUytlis6mAY4-dNHeMdvUeP9UMjz4aWCSZzDkt1iX85DW-zX73k-bmN1J7NtAnjkTQTw__"
+                }
+                height={100}
+                width={200}
+                className=""
+              />
+            </a>
+        </div>
     </div>
   );
 };
