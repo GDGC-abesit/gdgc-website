@@ -5,7 +5,7 @@ const Sponsers = () => {
     <div className="py-12">
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <h1 className="max-w-lg mb-6 font-sans text-4xl text-center md:text-4xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl md:mx-auto">
-          Our <span className="text-yellow-400 tracking-wider">SPONSERS</span>
+          Our <span className="text-yellow-400 tracking-wider">SPONSORS</span>
         </h1>
         <p className="text-base dark:text-gray-300 text-gray-700 md:text-lg text-center">
           People who have helped us throughout our journey constantly.
