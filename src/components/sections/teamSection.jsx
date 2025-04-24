@@ -121,14 +121,14 @@ const teamData = [
     linkedin: "https://www.linkedin.com/in/samyak-vansh-11aa83250/",
     github: "https://github.com/iamSamyakVansh",
   },
-  // {
-  //   id: 16,
-  //   name: "",
-  //   img: "https://i.pinimg.com/736x/2b/be/ea/2bbeead9464373ca9475bef908c0448e.jpg",
-  //   title: "",
-  //   linkedin: "https://drive.google.com/file/d/15hBkRcD50iKbF_i_9rF1oEtjhrTURk5i/view?usp=sharing",
-  //   github: "https://drive.google.com/file/d/1ZYXBnEb2EYl9nAR-EeaPppnME31N3foN/view?usp=sharing",
-  // },
+  {
+    id: 16,
+    name: "",
+    img: "https://i.pinimg.com/736x/2b/be/ea/2bbeead9464373ca9475bef908c0448e.jpg",
+    title: "Frontman",
+    github: "https://tinyurl.com/lostnow",
+    linkedin: "https://tinyurl.com/eliminatedchild",
+  },
 ];
 
 const TeamSection = () => {
