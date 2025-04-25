@@ -111,7 +111,8 @@ const Page = () => {
     }
 
     return (
-        <div className="relative h-screen w-full overflow-hidden bg-gray-100">
+        <div className="relative h-screen w-full overflow-hidden bg-gray-100" style={{background:"url('/squid game bg.jpg')",backgroundSize:"cover"}}>
+            <div class=" h-full w-full bg-black z-[2] opacity-80"></div>
             {/* QR Codes */}
             {positions.map((position, index) => {
                 const randomUrl = urls[Math.floor(Math.random() * urls.length)];
@@ -136,7 +137,6 @@ const Page = () => {
                 );
             })}
 
-            {/* Central Image */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
                 <Image
                     height={200}
