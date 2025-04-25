@@ -35,7 +35,7 @@ const teamData = [
   {
     id: 3,
     name: "Vishnu Goswami",
-    img: "https://live.staticflickr.com/65535/54037306066_16ba1b8cd7_z.jpg",
+    img: "https://live.staticflickr.com/65535/54474915695_54d229109e_z.jpg",
     title: "Web Development",
     linkedin: "https://www.linkedin.com/in/vishnu-goswami",
     github: "https://github.com/WebVishnu",
