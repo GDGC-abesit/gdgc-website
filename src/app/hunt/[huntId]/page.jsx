@@ -14,14 +14,15 @@ const Page = () => {
         "https://drive.google.com/drive/folders/1gcG_VVWlj9qh8PQhe_UTWH6LkgSFWhEm?usp=sharing",
         "https://drive.google.com/drive/folders/1SpodZ5rr-94sy2xKBGbbz0voRRX08M0l?usp=sharing",
         "https://drive.google.com/drive/folders/1VSpwp7wthw1byR1ZFz9CwmebCrBAgO88?usp=sharing",
+        "https://drive.google.com/drive/folders/1OePJ4UFWNHCp1DrwLBzm-yHSQQUmyyEu?usp=sharing", // newly added link
     ];
 
     const qrSize = 96;
     const buffer = 20;
     const centerRadius = 250;
-    const navbarHeight = 120; // Corrected to match pt-20 (5rem = 80px)
+    const navbarHeight = 120;
     const huntID = String(process.env.NEXT_PUBLIC_HUNT_ID);
-    const params = useParams()
+    const params = useParams();
     const [positions, setPositions] = useState([]);
 
     useEffect(() => {
@@ -32,7 +33,6 @@ const Page = () => {
             const viewportHeight = document.documentElement.clientHeight;
 
             const isOverlapping = (x, y, existingPositions) => {
-                // Check against center protected area
                 const centerX = viewportWidth / 2;
                 const centerY = viewportHeight / 2;
                 const distance = Math.sqrt(
@@ -40,7 +40,6 @@ const Page = () => {
                 );
                 if (distance < centerRadius + qrSize / 2) return true;
 
-                // Check against other QR codes
                 return existingPositions.some(pos => {
                     return (
                         Math.abs(x - pos.x) < qrSize + buffer &&
@@ -57,7 +56,6 @@ const Page = () => {
                 while (!validPosition && attempts < attemptsLimit) {
                     x = Math.random() * (viewportWidth - qrSize);
                     y = navbarHeight + Math.random() * (viewportHeight - navbarHeight - qrSize - buffer);
-
                     validPosition = !isOverlapping(x, y, generatedPositions);
                     attempts++;
                 }
@@ -111,9 +109,9 @@ const Page = () => {
     }
 
     return (
-        <div className="relative h-screen w-full overflow-hidden bg-gray-100" style={{background:"url('/squid game bg.jpg')",backgroundSize:"cover"}}>
-            <div class=" h-full w-full bg-black z-[2] opacity-80"></div>
-            {/* QR Codes */}
+        <div className="relative h-screen w-full overflow-hidden bg-gray-100" style={{ background: "url('/squid game bg.jpg')", backgroundSize: "cover" }}>
+            <div className="h-full w-full bg-black z-[2] opacity-80"></div>
+
             {positions.map((position, index) => {
                 const randomUrl = urls[Math.floor(Math.random() * urls.length)];
                 return (
