@@ -8,25 +8,12 @@ const Hero = () => {
   // Use `useMemo` to ensure `wordData` is stable across renders
   const wordData = useMemo(
     () => [
-      // "Welcome to",
-      // " स्वागत है",
-      // "خوش آمدید",
-      // "स्वागत आहे",
-      // "স্বাগত মানা",
-      // "ਸੁਆਗਤ ਹੈ",
-
-      "🟥🔺 Player...",
-      "What you see now is a mask.",
-      "Truth rarely lives in the present.",
-      "",
-      "To uncover what's buried.",
-      "trace the digital footsteps.",
-      "Revisit what the world forgot…",
-      "before it was erased.",
-      "Look back — if you dare.",
-      "",
-      "— The Front Man 🎭",
-
+      "Welcome to",
+      " स्वागत है",
+      "خوش آمدید",
+      "स्वागत आहे",
+      "স্বাগত মানা",
+      "ਸੁਆਗਤ ਹੈ",
     ],
     []
   );
