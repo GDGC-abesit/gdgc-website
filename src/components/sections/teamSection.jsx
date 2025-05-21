@@ -35,7 +35,7 @@ const teamData = [
   {
     id: 3,
     name: "Vishnu Goswami",
-    img: "https://live.staticflickr.com/65535/54037306066_16ba1b8cd7_z.jpg",
+    img: "https://live.staticflickr.com/65535/54474915695_54d229109e_z.jpg",
     title: "Web Development",
     linkedin: "https://www.linkedin.com/in/vishnu-goswami",
     github: "https://github.com/WebVishnu",
@@ -121,14 +121,14 @@ const teamData = [
     linkedin: "https://www.linkedin.com/in/samyak-vansh-11aa83250/",
     github: "https://github.com/iamSamyakVansh",
   },
-  // {
-  //   id: 16,
-  //   name: "",
-  //   img: "https://i.pinimg.com/736x/2b/be/ea/2bbeead9464373ca9475bef908c0448e.jpg",
-  //   title: "Frontman",
-  //   github: "https://tinyurl.com/lostnow",
-  //   linkedin: "https://tinyurl.com/eliminatedchild",
-  // },
+//   {
+//     id: 16,
+ //    name: "001",
+ //    img: "https://i.pinimg.com/736x/2b/be/ea/2bbeead9464373ca9475bef908c0448e.jpg",
+ //    title: "Frontman",
+ //    github: "https://tinyurl.com/lostnow",
+ //    linkedin: "https://tinyurl.com/eliminatedchild",
+//   },
 ];
 
 const TeamSection = () => {
